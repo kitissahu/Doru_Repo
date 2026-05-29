@@ -1,84 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kitish Consulatncy Services Registration Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kitis Consultancy Services Registration</title>
 
-        .login-container {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px gray;
-            width: 300px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f2f2f2;
+}
 
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
+.container{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
 
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+    line-height:1.4;
+}
 
-        button:hover {
-            background-color: #0056b3;
-        }
+.input-group{
+    margin-bottom:15px;
+}
 
-        .links {
-            text-align: center;
-            margin-top: 10px;
-        }
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#444;
+}
 
-        .links a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-    </style>
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#007BFF;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+.links{
+    text-align:center;
+    margin-top:15px;
+}
+
+.links a{
+    text-decoration:none;
+    color:#007BFF;
+}
+
+.links a:hover{
+    text-decoration:underline;
+}
+
+.company-name{
+    color:#007BFF;
+    font-weight:bold;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="login-container">
-        <h2>Login</h2>
+<div class="container">
 
-        <form action="#" method="post">
+    <h2>
+        Register to<br>
+        <span class="company-name">Kitis Consultancy Services</span>
+    </h2>
+
+    <form>
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Full Name" required>
+        </div>
+
+        <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter Email Address" required>
+        </div>
+
+        <div class="input-group">
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Enter Mobile Number" required>
+        </div>
+
+        <div class="input-group">
             <label>Username</label>
-            <input type="text" name="username" placeholder="Enter Username" required>
+            <input type="text" placeholder="Create Username" required>
+        </div>
 
+        <div class="input-group">
             <label>Password</label>
-            <input type="password" name="password" placeholder="Enter Password" required>
+            <input type="password" placeholder="Create Password" required>
+        </div>
 
-            <button type="submit">Login</button>
+        <div class="input-group">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" required>
+        </div>
 
-            <div class="links">
-                <p><a href="#">Forgot Password?</a></p>
-                <p>Don't have an account? <a href="#">Register</a></p>
-            </div>
-        </form>
-    </div>
+        <button type="submit">Register</button>
+
+        <div class="links">
+            <p>Already have an account? <a href="#">Login</a></p>
+        </div>
+
+    </form>
+
+</div>
 
 </body>
 </html>
